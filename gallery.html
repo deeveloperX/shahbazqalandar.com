@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahbaz Qalandar Foundation | Gallery</title>
+  <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/css/lightgallery.min.css">
+   	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link rel="shortcut icon" href="favicon.ico">	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+  <!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+  <style>
+    /* gallery */
+    
+    .revGallery-anchor, .gal-overlay, .nak-gallery-poster{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.revGallery-anchor{
+  overflow: hidden;
+  position: relative;
+  width: calc(100% / 5);
+  display: block;
+  float: left;
+  border: 5px solid #e9e9e9;
+}
+
+.gal-overlay{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(27,27,27, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background .4s ease;
+  -webkit-transition: background .4s ease;
+}
+		
+.revGallery-anchor:hover .gal-overlay{
+  background: rgba(27,27,27, 0);
+}
+
+.nak-gallery {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nak-gallery-poster{
+  padding-bottom:100%;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  display: block;
+  width: 100%;
+  height: 0;
+
+}
+
+.revGallery-anchor:hover .nak-gallery-poster{
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+}
+
+.img-responsive{
+  display:none;
+}
+
+.gal-cont{
+  padding: 75px 15px!important;
+}
+
+.button{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  width: 140px;
+  height: 48px;
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  color: #ff5722;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0px 5px;
+}
+
+.button:hover {
+  background-color: #c24e2a;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #fff;
+  margin: 0px;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #ff5722;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  .button{
+    width: 32%;
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+
+.revGallery-anchor-width1{
+  width: 40%
+}
+
+.revGallery-anchor-width2{
+  width: 30%
+}
+
+.revGallery-anchor-width3{
+  width: 20%
+}
+
+.nak-gallery-height1{
+  padding-bottom: 400px
+}
+
+.nak-gallery-height2{
+  padding-bottom: 300px
+}
+
+.nak-gallery-height3{
+  padding-bottom: 200px
+}
+
+.preloader{
+  display: none;
+}
+
+.preloaderStyle{
+  background: red;
+  width: 100%;
+  height: 100px;
+}
+  </style>
+</head>
+<body>
+
+  <div id="lal-wrapper">
+  <div id="lal-page">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 text-left lal-link">
+						<a href="index.html">Home</a>
+						<a href="gallery.html">Gallery</a>
+					</div>
+					<div class="col-md-6 col-sm-6 text-right lal-social">
+						<a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=100092013934681&_rdc=1&_rdr" class="grow"><i class="icon-facebook2"></i></a>
+						<a href="https://instagram.com/sqf_foundation?igshid=YmMyMTA2M2Y=" class="grow"><i class="icon-instagram2"></i></a>
+						<a href="https://www.youtube.com/channel/UCnbYmtbo9T9niw6owubeC0w" class="grow"><i class="icon-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header id="lal-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+          <div class="items">
+            <!-- <i class="fa fa-solid fa-house"></i> -->
+            <img class="logo" src="images/logo/sqf-light-logo.png" alt="sqf-logo">
+            <!-- START #lal-menu-wrap -->
+					<nav id="lal-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="lal-primary-menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#" class="lal-sub-ddown">Get Involved</a>
+								<ul class="lal-sub-menu">
+									<!-- <li><a href="">Donate</a></li> -->
+									<li><a href="">Fundraise</a></li>
+									<li><a href="">Campaign</a></li>
+									<!-- <li><a href="">Philantrophy</a></li> -->
+									<li><a href="">Volunteer</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="lal-sub-ddown">Our Projects</a>
+								 <ul class="lal-sub-menu">
+								 	<li><a href="projects.html">Documentary</a></li>
+								 	<li><a href="projects.html">Mastam Studio</a></li>
+								 	<li><a href="projects.html">University</a></li>
+									<li><a href="projects.html">Library</a></li>
+								 	<li><a href="projects.html">Research Center</a></li>
+								 	<li><a href="projects.html">Revival of Art $ Culture</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="blog.html">Blogs</a></li>
+              <li class="active"><a href="gallery.html">Gallery</a></li>
+
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+          </div>
+					
+				</div>
+			</div>
+		</header>
+
+    <div class="lal-hero">
+			<div class="lal-overlay"></div>
+			<div class="lal-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/front.jpg);">
+				<div class="desc animate-box">
+					<h2 style="font-size: 60px;">Our <strong>Gallery</strong></h2>
+					<!-- <span><a class="btn btn-primary btn-lg" href="contact.html"><i style="font-size: 40px;border-radius: 50px;" class="fa fa-arrow-down"></i></a></span> -->
+				</div>
+			</div>
+
+		</div>
+    <br><br>
+
+
+
+      <!-- Gallery -->
+
+          <button type="button" class="button is-checked" data-filter="">ALL</button>
+          <button type="button" class="button" data-filter=".sehwan">SEHWAN</button>
+          <button type="button" class="button" data-filter=".others">OTHERS</button>
+    
+    
+
+    <div class="nak-gallery nlg1" id="gallery">
+      <a href="images/sehwan-gal/1.jpeg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/1.jpeg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/1.jpeg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>	
+      <a href="images/others-gal/1.jpg" class="revGallery-anchor others">
+        <img class="img-responsive" src="images/others-gal/1.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/others-gal/1.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>	
+      <a href="images/sehwan-gal/2.jpeg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/2.jpeg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/2.jpeg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>	
+      <a href="images/others-gal/2.jpg" class="revGallery-anchor others">
+        <img class="img-responsive" src="images/others-gal/2.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/others-gal/2.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/3.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/3.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/3.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>	
+      <a href="images/others-gal/3.jpg" class="revGallery-anchor others">
+        <img class="img-responsive" src="images/others-gal/3.JPG">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/others-gal/3.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+
+      <a href="images/others-gal/4.jpg" class="revGallery-anchor others">
+        <img class="img-responsive" src="images/others-gal/4.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/others-gal/4.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/5.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/5.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/5.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/6.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/6.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/6.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/others-gal/5.jpg" class="revGallery-anchor others">
+        <img class="img-responsive" src="images/others-gal/5.jpg">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/others-gal/5.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/7.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/7.JPG">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/7.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/8.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/8.JPG">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/8.jpg');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      <a href="images/sehwan-gal/9.jpg" class="revGallery-anchor sehwan">
+        <img class="img-responsive" src="images/sehwan-gal/9.JPG">
+        <div style="overflow:hidden">
+          <div class="nak-gallery-poster" style="background-image:url('images/sehwan-gal/9.JPG');"></div>
+        </div>
+        <div class="gal-overlay">
+          <div class="photo"></div>
+        </div>
+      </a>
+      
+    </div>
+</div>
+
+
+
+
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <p class="lal-social-icons">
+            <a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=100092013934681&_rdc=1&_rdr"><i class="icon-facebook2"></i></a>
+            <a href="https://instagram.com/sqf_foundation?igshid=YmMyMTA2M2Y="><i class="icon-instagram"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSHxjhcvVxMMxnWTdcMWVfGMJkDrDqmTCWDmtkPfJNdmZmXlzDWwRgGzVNXLkRFLfRksJlzk"><i class="icon-email"></i></a>
+            <a href="https://www.youtube.com/channel/UCnbYmtbo9T9niw6owubeC0w"><i class="icon-youtube"></i></a>
+          </p>
+          <p>Copyright 2023 | All Rights Reserved.<br><a href="https://deeveloperx.github.io/portfolio/">DeeveloperX</a> & <a href="">CyberX</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+
+<script>
+  $(document).ready(function() {
+			var $gallery = $('#gallery');
+			var $boxes = $('.revGallery-anchor');
+			$boxes.hide(); 
+
+			$gallery.imagesLoaded( {background: true}, function() {
+    		$boxes.fadeIn();
+
+				$gallery.isotope({
+					// options
+					sortBy : 'original-order',
+					layoutMode: 'fitRows',
+					itemSelector: '.revGallery-anchor',
+					stagger: 30,
+				});
+			});	
+
+		 	$('button').on( 'click', function() {
+		 		var filterValue = $(this).attr('data-filter');
+			  	$('#gallery').isotope({ filter: filterValue });
+			  	$gallery.data('lightGallery').destroy(true);
+			    $gallery.lightGallery({
+			      	selector: filterValue.replace('*','')
+			    });
+			});
+});
+
+$(document).ready(function() {
+	        $("#gallery").lightGallery({
+            
+}); 
+	    });
+
+//button active mode
+$('.button').click(function(){
+    $('.button').removeClass('is-checked');
+    $(this).addClass('is-checked');
+});
+
+
+//CSS Gram Filters on Mouse enter
+$("#gallery a .nak-gallery-poster").addClass("inkwell");
+
+$("#gallery a").on({
+  mouseenter : function() {
+      $(this).find(".nak-gallery-poster").removeClass("inkwell").addClass("walden");
+  },
+  mouseleave : function() {
+      $(this).find(".nak-gallery-poster").removeClass("walden").addClass("inkwell");
+  }
+}); 
+</script>
+</body>
+</html>

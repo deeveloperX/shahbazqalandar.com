@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shahbaz Qalandar Foundation | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link rel="shortcut icon" href="favicon.ico">	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		:root {
+		--orange: #fd9940;
+		--darkorange: #dd7d25;
+		--platinum: #e5e5e5;
+		--black: #2b2d42;
+		--white: #fff;
+		--thumb: #edf2f4;
+		}
+
+		body {
+		font: 16px / 24px "Rubik", sans-serif;
+		}
+
+		.container {
+		max-width: 1400px;
+		padding: 0 15px;
+		margin: 0 auto;
+		}
+
+		h2 {
+		font-size: 32px;
+		margin-bottom: 1em;
+		}
+
+		.cards {
+		display: grid;
+		grid-auto-columns: 100%;
+		grid-column-gap: 10px;
+		grid-auto-flow: column;
+		padding: 25px 0px;
+		list-style: none;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		}
+
+		.card {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		height: 350px;
+		background: var(--white);
+		border-radius: 12px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+		scroll-snap-align: start;
+		transition: all 0.2s;
+		}
+
+		.card:hover {
+		color: var(--white);
+		background: #ff5722;
+		}
+
+		.card .card-title {
+		font-size: 21px;
+		margin: 10px 0px;
+		}
+
+		.card .card-content {
+		margin: 20px 0;
+		}
+
+		.card:hover .card-title,
+		.card:hover .card-content p{
+			color: var(--white);
+		}
+
+		.card .card-link-wrapper {
+		margin-top: auto;
+		}
+
+		.card .card-link {
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		background: var(--orange);
+		padding: 6px 12px;
+		border-radius: 8px;
+		transition: background 0.2s;
+		}
+
+		.card:hover .card-link {
+		background: var(--darkorange);
+		}
+
+		.cards::-webkit-scrollbar {
+		height: 12px;
+		}
+
+		.cards::-webkit-scrollbar-thumb,
+		.cards::-webkit-scrollbar-track {
+		border-radius: 92px;
+		}
+
+		.cards::-webkit-scrollbar-thumb {
+		background: var(--darkorange);
+		}
+
+		.cards::-webkit-scrollbar-track {
+		background: var(--thumb);
+		}
+
+		.testimonial-img{
+			width: 100px;
+			height: auto;
+			border-radius: 50%;
+		}
+
+		@media (min-width: 500px) {
+		.cards {
+			grid-auto-columns: calc(50% - 10px);
+			grid-column-gap: 20px;
+		}
+		}
+
+		@media (min-width: 700px) {
+		.cards {
+			grid-auto-columns: calc(calc(100% / 3) - 20px);
+			grid-column-gap: 30px;
+		}
+		}
+
+		@media (min-width: 1100px) {
+		.cards {
+			grid-auto-columns: calc(25% - 30px);
+			grid-column-gap: 40px;
+		}
+		}
+
+	</style>
+
+	</head>
+	<body>
+		<div id="lal-wrapper">
+		<div id="lal-page">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 text-left lal-link">
+							<a href="index.html">Home</a>
+							<a href="gallery.html">Gallery</a>
+						</div>
+						<div class="col-md-6 col-sm-6 text-right lal-social">
+							<a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=100092013934681&_rdc=1&_rdr" class="grow"><i class="icon-facebook2"></i></a>
+							<a href="https://instagram.com/sqf_foundation?igshid=YmMyMTA2M2Y=" class="grow"><i class="icon-instagram2"></i></a>
+							<a href="https://www.youtube.com/channel/UCnbYmtbo9T9niw6owubeC0w" class="grow"><i class="icon-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<header id="lal-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-lal-nav-toggle lal-nav-toggle dark"><i></i></a>
+						<img class="logo" src="images/logo/sqf-light-logo.png" alt="sqf-logo">
+					<!-- START #lal-menu-wrap -->
+					<nav id="lal-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="lal-primary-menu">
+							<li><a href="index.html">Home</a></li>
+							<li class="disabled">
+								<a href="#" class="lal-sub-ddown" >Get Involved</a>
+								<ul class="lal-sub-menu">
+									<!-- <li><a href="">Donate</a></li> -->
+									<li><a href="">Fundraise</a></li>
+									<li><a href="">Campaign</a></li>
+									<!-- <li><a href="">Philantrophy</a></li> -->
+									<li><a href="">Volunteer</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="lal-sub-ddown">Our Projects</a>
+								 <ul class="lal-sub-menu">
+								 	<li><a href="projects.html">Documentary</a></li>
+								 	<li><a href="projects.html">Mastam Studio</a></li>
+								 	<li><a href="projects.html">University</a></li>
+									<li><a href="projects.html">Library</a></li>
+								 	<li><a href="projects.html">Research Center</a></li>
+								 	<li><a href="projects.html">Revival of Art $ Culture</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About</a></li>
+							<li class="active"><a href="executive.html">Executives</a></li>
+							<li><a href="blog.html">Blogs</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		
+
+        <!-- Testimonial Start -->
+        <div class="container">
+			<h2>Testimonials</h2>
+			<ul class="cards">
+				
+			  	<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+						<h3 class="card-title">Ayesha Bakht</h3>
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="cv/Iftikhar Cheema_CV_July 2022.pdf" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+					  
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">About Ayesha Bakht</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  <div class="modal-body">
+								<div class="modal-scroll">
+								  <embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf" width="100%" height="500px">
+								</div>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  
+				</li>
+
+				<li class="card">
+					<div>
+						<img src="images/iftekhar.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Iftekhar Cheema</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Iftekhar Cheema</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 3</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 3</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 4</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 4</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 5</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 5</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 6</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 6</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 7</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 7</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 8</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 8</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 9</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 9</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="card">
+					<div>
+						<img src="images/ayesha.jpg" alt="Ayesha Bakht" class="testimonial-img">
+					<h3 class="card-title">Person 10</h3>
+					<div class="card-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					</div>
+					<div class="card-link-wrapper">
+						<a href="" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal">View CV</a>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">About Person 10</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="modal-scroll">
+										<embed src="cv/Iftikhar Cheema_CV_July 2022.pdf" type="pdf"
+										width="100%" height="500px">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		  </div>
+          
+        <!-- Testimonial End -->
+		
+
+		
+		<!-- lal-blog-section -->
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="lal-social-icons">
+								<a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=100092013934681&_rdc=1&_rdr"><i class="icon-facebook2"></i></a>
+								<a href="https://instagram.com/sqf_foundation?igshid=YmMyMTA2M2Y="><i class="icon-instagram"></i></a>
+								<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSHxjhcvVxMMxnWTdcMWVfGMJkDrDqmTCWDmtkPfJNdmZmXlzDWwRgGzVNXLkRFLfRksJlzk"><i class="icon-email"></i></a>
+								<a href="https://www.youtube.com/channel/UCnbYmtbo9T9niw6owubeC0w"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2023 | All Rights Reserved.<br><a href="https://deeveloperx.github.io/portfolio/">DeeveloperX</a> & <a href="">CyberX</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END lal-page -->
+
+	</div>
+	<!-- END lal-wrapper -->
+	<!-- fh5cofh5cofh5cofh5cofh5co -->
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
